@@ -1,0 +1,9 @@
+# A pack is everything the engine knows about one field. The engine itself knows none of it:
+# another field replaces this folder and nothing else.
+[pack]
+name = "software-engineering"
+version = "2"
+
+[files]
+seed = "seed.tsv"  # the starting directions: name, value, parents
+sim = "sim.json"   # this field's synthetic world, for the simulator only (not part of the fingerprint)

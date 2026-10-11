@@ -1,0 +1,50 @@
+{
+ "_comment": "A synthetic world for the simulator only. Code fails in the same ways everywhere: one true defect rate per direction, varied a little per project by a log-normal factor of this spread. The specific directions the seed lacks, with the domain a reviewer might file them under instead; synonym pairs; and names a reviewer invents that never pay, with the domain it would hang them under.",
+ "projects": 10,
+ "spread": 0.3,
+ "truth": {
+  "logic": 0.35,
+  "error-handling": 0.3,
+  "security": 0.2,
+  "data-integrity": 0.25,
+  "concurrency": 0.2,
+  "resource-lifetime": 0.15,
+  "performance": 0.2,
+  "maintainability": 0.35,
+  "optimistic-locking": 0.15,
+  "partial-commits": 0.15,
+  "role-checks": 0.15,
+  "n-plus-one": 0.25,
+  "duplicate-delivery": 0.1,
+  "hollow-tests": 0.2,
+  "missing-deadlines": 0.2,
+  "torn-reads": 0.05,
+  "memory-safety": 0.05,
+  "latency-spikes": 0.1,
+  "unsafe-parsing": 0.15,
+  "task-leaks": 0.1
+ },
+ "nearest": {
+  "optimistic-locking": "concurrency",
+  "partial-commits": "data-integrity",
+  "role-checks": "security",
+  "n-plus-one": "performance",
+  "duplicate-delivery": "data-integrity",
+  "hollow-tests": "maintainability",
+  "missing-deadlines": "error-handling",
+  "torn-reads": "concurrency",
+  "memory-safety": "resource-lifetime",
+  "latency-spikes": "performance",
+  "unsafe-parsing": "security",
+  "task-leaks": "resource-lifetime"
+ },
+ "synonyms": {
+  "n-plus-one": "query-in-loop",
+  "missing-deadlines": "unbounded-waits"
+ },
+ "junk": {
+  "style-drift": "maintainability",
+  "hypothetical-race": "concurrency",
+  "speculative-leak": "resource-lifetime"
+ }
+}

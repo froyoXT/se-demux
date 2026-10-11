@@ -1,0 +1,12 @@
+# The seed: eight broad domains of how code fails, peers with no levels. Every specific direction is born under them.
+# value: prior mean severity of what it finds (0.7 high-impact, 0.5 default, 0.3 low).
+# parents: optional third column, comma-separated names of earlier seeds. A root leaves it empty.
+# name	value	parents
+logic	0.5
+error-handling	0.5
+security	0.7
+data-integrity	0.7
+concurrency	0.7
+resource-lifetime	0.5
+performance	0.3
+maintainability	0.3
