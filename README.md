@@ -73,7 +73,7 @@ What the simulator can't show is whether steering pays on real code. One fixture
 | decoys reported | 0 | 0 |
 | tokens | 1.4M | 4.1M |
 
-On a first review every seed is walked, so this measures the skill's cost, not its steering. The payload, the refuter and the apply roughly tripled the tokens, and the refuter dropped one real finding. Whether steering repays that once directions go dark is not yet measured.
+On a first review every seed is walked, so this measures the skill's cost, not its steering. The payload, the refuter and the apply roughly tripled the tokens, and the refuter dropped one real finding. A follow-up study found that, on a strong reviewer, directions don't go dark, so steering is unlikely to repay that cost; it proposes a redesign and a protocol to settle it ([RESEARCH.md](RESEARCH.md)).
 
 ## Use
 
